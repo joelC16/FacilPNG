@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FacilPNG</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/ec56df5e4e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Ventana emergente de las imagenes -->
+    <div class="ventana-emergente-container"> <!-- es el container que ocupa toda la pagina para ponerle el fondo transparente -->
+        <div class="cruz-ventana-emergente">X</div>
+        <div class="ventana-emergente"> <!-- es el container con fondo gris de la ventana -->
+            <nav class="ventana-emergente_nav">
+                <a href="#"><img src="Imagenes/logo.png" alt="" style="cursor: pointer;"></a>
+                <form class="buscador" style=" padding-bottom: 10px;">
+                    <input type="text" name="buscar" placeholder="Buscar imagen..." style="width: fit-content;">
+                    <button><i class="fa-solid fa-magnifying-glass" style="cursor: pointer;"></i></button>
+                </form>
+            </nav>
+            <div class="ventana-emergente_imagen-container">
+                <div>
+                    <img src="Imagenes/imagen-1.jpg" alt="" style="width: 400px;">
+                </div>
+                <button>Descargar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <header>
+        <nav class="nav">
+            <a href="#"><img src="Imagenes/logo.png" alt="" style="cursor: pointer;"></a>
+            <div><a href="#">Newsletter</a></div>
+        </nav>
+        <section class="buscador-container">
+            <h1>Descargá imagenes de alta calidad gratis</h1>
+            <form class="buscador">
+                <input type="text" name="buscar" placeholder="Buscar imagen...">
+                <button><i class="fa-solid fa-magnifying-glass" style="cursor: pointer;"></i></button>
+            </form>
+            <button class="btn-buscar" type="submit">Buscar</button>
+        </section>
+    </header>
+
+
+
+
+
+    <main>
+        <section class="first-section">
+            <h1>Descubrí nuestras imagenes:</h1>
+            <div class="imagenes-principal-container">
+
+                <div class="column column-1">
+                    <div class="img-container">
+                        <img id="imagen" src="Imagenes/imagen-1.jpg" alt="">
+                        <div>Medidas...</div>
+                    </div>
+                    <div class="img-container">
+                        <img id="imagen" src="Imagenes/imagen-2.jpg" alt="">
+                        <div>Medidas...</div>
+                    </div>
+                    <div class="img-container">
+                        <img id="imagen" src="Imagenes/imagen-3.jpg" alt="">
+                        <div>Medidas...</div>
+                    </div>
+                    <div class="img-container">
+                        <img id="imagen" src="Imagenes/imagen-4.jpg" alt="">
+                        <div>Medidas...</div>
+                    </div>
+                </div>
+
+                <div class="column column-2">
+                    <div class="img-container">
+                        <img id="imagen" src="Imagenes/imagen-4.jpg" alt="">
+                        <div>Medidas...</div>
+                    </div>
+                    <div class="img-container">
+                        <img id="imagen" src="Imagenes/imagen-3.jpg" alt="">
+                        <div>Medidas...</div>
+                    </div>
+                    <div class="img-container">
+                        <img id="imagen" src="Imagenes/imagen-2.jpg" alt="">
+                        <div>Medidas...</div>
+                    </div>
+                    <div class="img-container">
+                        <img id="imagen" src="Imagenes/imagen-1.jpg" alt="">
+                        <div>Medidas...</div>
+                    </div>
+                    <div class="img-container">
+                        <img id="imagen" src="Imagenes/imagen-3.jpg" alt="">
+                        <div>Medidas...</div>
+                    </div>
+                </div>
+
+
+                <div class="column column-3">
+                    <div class="img-container">
+                        <img id="imagen" src="Imagenes/imagen-5.jpg" alt="">
+                        <div>Medidas...</div>
+                    </div>
+                    <div class="img-container">
+                        <img id="imagen" src="Imagenes/imagen-6.jpg" alt="">
+                        <div>Medidas...</div>
+                    </div>
+                    <div class="img-container">
+                        <img id="imagen" src="Imagenes/imagen-7.jpg" alt="">
+                        <div>Medidas...</div>
+                    </div>
+                    <div class="img-container">
+                        <img id="imagen" src="Imagenes/imagen-8.jpg" alt="">
+                        <div>Medidas...</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="second-section">
+            <h2 style="margin: 0px 0px 30px 10px; color: var(--color-gray);">Contenido destacado:</h2>
+            <div class="contenido-destacado-container">
+                <div class="destacado-item">
+                    <div class="">Año nuevo</div>
+                </div>
+                <div class="destacado-item">
+                    <div class="">Navidad</div>
+                </div>
+                <div class="destacado-item">
+                    <div class="">Reyes magos</div>
+                </div>
+                <div class="destacado-item">
+                    <div class="">Comidas navideñas</div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="third-section">
+            <div class="newsletter">
+                <div><img src="Imagenes/mail.png" alt=""></div>
+                <h2>Suscribite a nuestro Newsletter</h2>
+                <p>Mantente actualizado con nuestras noticias</p>
+                <form action="">
+                    <input class="email" type="email" name="" id="" placeholder="Dirección de Email">
+                    <input class="enviar-email" type="button" value="Suscribirme">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <a href="#"><img src="Imagenes/logo.png" alt=""></a>
+        <div>Copyright © 2010-2023 FácilPng Company All rights reserved.</div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

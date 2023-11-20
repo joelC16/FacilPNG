@@ -1,0 +1,369 @@
+/* Estilos generales */
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    margin: 7%;
+}
+:root{
+    --color-gray: #302E2E;
+    --background-gray: rgb(156, 154, 154);
+    --background-gray-light: rgb(214, 210, 210);
+
+}
+
+
+/* Header */
+header{
+    background: linear-gradient(to right, #E7E3E3, #807d7d);
+    padding: 0px 7%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+.nav div a, footer div a{
+    background-color: #AFABAB;
+    color: var(--color-gray);
+    box-shadow: 2px 3px 3px var(--color-gray);
+    padding: 9px 25px;
+    font-size: 1.3em;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.buscador-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 50px 0px;
+}
+.buscador-container h1{
+    text-align: center;
+    color: var(--color-gray);
+    font-size: 2.4em;
+    width: 50%;
+    margin: 0px;
+}
+.buscador{
+    display: flex;
+}
+.buscador input{
+    background-color: var(white);
+    box-shadow: 2px 3px 3px var(--color-gray);
+    border: none;
+    border-top: 1px solid var(--color-gray);
+    border-left: 1px solid var(--color-gray);
+    border-radius: 40px 0px 0px 40px;
+    outline: none;
+    width: 50vw;
+    padding: 20px;
+}
+
+.buscador button{
+    background-color: white;
+    box-shadow: 2px 3px 3px var(--color-gray);
+    border: none;
+    border-top: 1px solid var(--color-gray);
+    border-right: 1px solid var(--color-gray);
+    border-radius: 0px 40px 40px 0px;
+    padding: 20px;
+}
+
+.buscador-container .btn-buscar{
+    background-color: var(--color-gray);
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 40px;
+    padding: 14px;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* First section */
+
+/* Grid imagenes */
+.imagenes-principal-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.column {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(10px, min-content));
+    gap: 10px;
+    padding: 10px;
+}
+.column .img-container{
+    position: relative;
+    cursor: pointer;
+}
+.column .img-container div{
+    position: absolute;
+    bottom: 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.493);
+    z-index: 100;
+}
+.column img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+@media screen and (max-width: 900px) {
+    .imagenes-principal-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+}
+@media screen and (max-width: 600px) {
+    .imagenes-principal-container
+    
+     {
+        grid-template-columns: repeat(1, 1fr);
+      }
+}
+
+
+
+
+
+
+
+
+/* Second-section */
+
+.second-section{
+    margin: 50px 0px;
+}
+
+.contenido-destacado-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.destacado-item{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 40%;
+    height: 250px;
+    background-color: var(--background-gray);
+    margin: 10px;
+}
+.destacado-item div{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-gray);
+    color: white;
+}
+.destacado-item:nth-child(1), .destacado-item:nth-child(4){
+    width: 55%;
+}
+
+
+
+
+
+
+/* third-section */
+.third-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-gray-light);
+    color: var(--color-gray);
+    width: 60%;
+    padding: 50px;
+    text-align: center;
+    border: 1px solid var(--color-gray);
+}
+.newsletter div img{
+    object-fit: contain;
+}
+.newsletter h2{
+    font-size: 1.6em;
+    margin-bottom: 0px;
+}
+.newsletter p{
+    font-size: 1.2em;
+}
+.newsletter form{
+    width: 100%;
+}
+.newsletter form .email{
+    background-color: var(white);
+    box-shadow: 2px 3px 3px var(--color-gray);
+    border: none;
+    border: 1px solid var(--color-gray);
+    border-radius: 40px;
+    outline: none;
+    width: 50%;
+    padding: 15px;
+}
+.enviar-email{
+    background-color: var(--color-gray);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 15px;
+    width: 30%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #807d7d;
+    padding: 50px;
+}
+
+
+
+
+
+
+/* Ventana emergente */
+.cruz-ventana-emergente{
+    background: none; 
+    color: white; 
+    font-size: 2.5em;
+    position: absolute; 
+    padding: 5px;
+    top: 0px; 
+    right: 0px;
+    cursor: pointer;
+}
+.ventana-emergente-container{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+.ventana-emergente{
+    background-color: rgb(189, 189, 189);
+    border-radius: 20px;
+    padding: 10px;
+    width: 60%;
+    height: 90vh;
+    min-height: 300px;
+}
+.ventana-emergente_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.ventana-emergente_imagen-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    gap: 20px;
+
+}
+.ventana-emergente_imagen-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ventana-emergente_imagen-container div img{
+    max-width: 550px !important;
+    max-height: 350px ;
+    object-fit: contain;
+}
+.ventana-emergente_imagen-container button{
+    background-color: rgb(23, 145, 23);
+    color: rgb(201, 200, 200);
+    font-size: 1.2em;
+    padding: 10px 90px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.ventana-emergente_imagen-container button:hover{
+    background-color: rgb(78, 212, 78);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+    .buscador-container h1{
+        font-size: 2.2em;
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .buscador-container h1{
+        font-size: 2em;
+        width: 80%;
+    }
+    .buscador-container{
+        height: 65vh;
+    }
+}
